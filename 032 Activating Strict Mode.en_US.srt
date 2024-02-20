@@ -1,0 +1,820 @@
+1
+00:00:01,300 --> 00:00:03,770
+Now before continuing to learn JavaScript,
+
+2
+00:00:03,770 --> 00:00:05,290
+in this new section,
+
+3
+00:00:05,290 --> 00:00:08,610
+we should first activate a special mode in JavaScript,
+
+4
+00:00:08,610 --> 00:00:10,223
+called Strict Mode.
+
+5
+00:00:12,090 --> 00:00:15,200
+And here on my desktop I already have the folder,
+
+6
+00:00:15,200 --> 00:00:18,160
+for this part 2 fundamental section.
+
+7
+00:00:18,160 --> 00:00:20,380
+And for you as I explained before,
+
+8
+00:00:20,380 --> 00:00:23,725
+these starred files come from the get up repertory
+
+9
+00:00:23,725 --> 00:00:26,390
+that I showed you at the beginning of the course.
+
+10
+00:00:26,390 --> 00:00:30,370
+So use that get up reparatory as your starter folder
+
+11
+00:00:30,370 --> 00:00:32,740
+or ofcourse you can just copy that data
+
+12
+00:00:32,740 --> 00:00:35,730
+somewhere else to your computer and work from there,
+
+13
+00:00:35,730 --> 00:00:36,923
+whatever works for you.
+
+14
+00:00:39,680 --> 00:00:43,340
+Now I'm creating here in UVS code window
+
+15
+00:00:46,120 --> 00:00:49,690
+and lets open this new folder.
+
+16
+00:00:49,690 --> 00:00:51,910
+So that's our new working folder
+
+17
+00:00:51,910 --> 00:00:55,870
+and this time we already have the script file here
+
+18
+00:00:55,870 --> 00:00:58,860
+and in the HDML file,
+
+19
+00:00:58,860 --> 00:01:02,300
+we see that the script is also already linked,
+
+20
+00:01:02,300 --> 00:01:05,290
+so we don't have to do that this time.
+
+21
+00:01:05,290 --> 00:01:08,653
+At this point I assume that you already know how to do that.
+
+22
+00:01:10,150 --> 00:01:12,290
+So closing the side bar here
+
+23
+00:01:12,290 --> 00:01:15,810
+and lets now get started in this new section.
+
+24
+00:01:15,810 --> 00:01:19,470
+And as I said lets start with strict mode.
+
+25
+00:01:19,470 --> 00:01:21,403
+So strict mode is a special mode
+
+26
+00:01:21,403 --> 00:01:24,090
+that we can activate in JavaScript,
+
+27
+00:01:24,090 --> 00:01:25,750
+which makes it easier for us
+
+28
+00:01:25,750 --> 00:01:28,820
+to write a secure JavaScript code.
+
+29
+00:01:28,820 --> 00:01:31,630
+And all we have to do to activate strict mode
+
+30
+00:01:31,630 --> 00:01:35,550
+is to write this ring at the beginning of the script
+
+31
+00:01:35,550 --> 00:01:40,260
+so use strict and that's it.
+
+32
+00:01:40,260 --> 00:01:42,540
+So with this, we activated strict mode
+
+33
+00:01:42,540 --> 00:01:44,520
+for the entire script.
+
+34
+00:01:44,520 --> 00:01:47,640
+Now what's important is that this line of code,
+
+35
+00:01:47,640 --> 00:01:49,570
+so this statement here basically
+
+36
+00:01:49,570 --> 00:01:53,050
+has to be the very first statement in the script.
+
+37
+00:01:53,050 --> 00:01:55,341
+So if we have any code before this
+
+38
+00:01:55,341 --> 00:01:58,290
+then strict mode will not be activated.
+
+39
+00:01:58,290 --> 00:02:00,690
+Comments are allowed because JavaScript
+
+40
+00:02:00,690 --> 00:02:03,720
+will just ignore them but no code.
+
+41
+00:02:03,720 --> 00:02:07,670
+Okay, now we actually can also activate strict mode,
+
+42
+00:02:07,670 --> 00:02:11,490
+only for a specific function or a specific block.
+
+43
+00:02:11,490 --> 00:02:14,240
+But I don't really see the point in doing that
+
+44
+00:02:14,240 --> 00:02:18,430
+and so I always just use it at the beginning of each script
+
+45
+00:02:18,430 --> 00:02:21,070
+and so I believe that you should do the same.
+
+46
+00:02:21,070 --> 00:02:22,910
+So always just put strict mode
+
+47
+00:02:22,910 --> 00:02:24,860
+in the beginning of your scripts
+
+48
+00:02:24,860 --> 00:02:28,350
+and like that write more secure code.
+
+49
+00:02:28,350 --> 00:02:30,940
+And when secure, I mean that strict mode
+
+50
+00:02:30,940 --> 00:02:33,170
+makes it easier for us developers
+
+51
+00:02:33,170 --> 00:02:35,350
+to avoid accidental errors.
+
+52
+00:02:35,350 --> 00:02:39,790
+So basically it helps us introduce the bugs into our code
+
+53
+00:02:39,790 --> 00:02:42,080
+and that's because of 2 reasons.
+
+54
+00:02:42,080 --> 00:02:45,790
+First, strict mode forbids us to do certain things
+
+55
+00:02:45,790 --> 00:02:49,110
+and second, it will actually create visible errors for us
+
+56
+00:02:49,110 --> 00:02:52,730
+in certain situations in which without strict mode
+
+57
+00:02:52,730 --> 00:02:55,730
+JavaScript will simply fail silently
+
+58
+00:02:55,730 --> 00:02:58,870
+without letting us know that we did a mistake.
+
+59
+00:02:58,870 --> 00:02:59,760
+Okay.
+
+60
+00:02:59,760 --> 00:03:04,220
+So again, first strict mode forbids us to do certain things
+
+61
+00:03:04,220 --> 00:03:06,670
+and second it creates visible errors
+
+62
+00:03:06,670 --> 00:03:09,920
+and the developer console, where in other situations
+
+63
+00:03:09,920 --> 00:03:13,060
+JavaScript would just fail silently.
+
+64
+00:03:13,060 --> 00:03:15,830
+Okay, but now to make this a bit more clear,
+
+65
+00:03:15,830 --> 00:03:18,260
+Lets actually see an example of
+
+66
+00:03:18,260 --> 00:03:20,370
+one of the most important changes
+
+67
+00:03:20,370 --> 00:03:22,123
+that strict mode introduces.
+
+68
+00:03:23,010 --> 00:03:25,030
+So lets create a variable here
+
+69
+00:03:25,030 --> 00:03:28,890
+with a complicated name lets say hasDriverslicense
+
+70
+00:03:33,920 --> 00:03:36,740
+and lets initialize it as false here.
+
+71
+00:03:36,740 --> 00:03:41,740
+And then I'll also create, pass test and set that to true.
+
+72
+00:03:44,300 --> 00:03:46,250
+And I'm using let in both of them
+
+73
+00:03:46,250 --> 00:03:48,470
+because I want to change them later
+
+74
+00:03:48,470 --> 00:03:50,800
+and actually this one not.
+
+75
+00:03:50,800 --> 00:03:52,540
+So lets just use a const here,
+
+76
+00:03:52,540 --> 00:03:56,020
+because remember by default we should always const
+
+77
+00:03:56,020 --> 00:03:58,300
+to avoid accidental errors.
+
+78
+00:03:58,300 --> 00:04:00,490
+So basically there is a certain person
+
+79
+00:04:00,490 --> 00:04:04,150
+which right now does not have a drivers license
+
+80
+00:04:04,150 --> 00:04:06,340
+but they just passed a test,
+
+81
+00:04:06,340 --> 00:04:09,513
+that's why we have passed test set to true.
+
+82
+00:04:10,490 --> 00:04:12,760
+And now we want to write some logic
+
+83
+00:04:12,760 --> 00:04:15,110
+so that when they pass the test
+
+84
+00:04:15,110 --> 00:04:18,550
+this variable here gets set to true.
+
+85
+00:04:18,550 --> 00:04:21,707
+So, we can say if passTest, right?
+
+86
+00:04:24,160 --> 00:04:27,040
+Because this one here is a boolean value
+
+87
+00:04:27,040 --> 00:04:30,610
+and so this condition will be either true or false.
+
+88
+00:04:30,610 --> 00:04:34,930
+And then lets introduce a simple bug here, okay?
+
+89
+00:04:34,930 --> 00:04:37,950
+So this is a kind of hard to write variable name
+
+90
+00:04:37,950 --> 00:04:41,343
+and so lets pretend that we are writing it wrong here.
+
+91
+00:04:42,500 --> 00:04:47,500
+So hasDriversLicense equal to true.
+
+92
+00:04:49,670 --> 00:04:53,820
+So what I did here was to basically omit the 's'
+
+93
+00:04:53,820 --> 00:04:57,270
+So this letter here is not in this variable
+
+94
+00:04:57,270 --> 00:04:59,820
+that am trying to change here to true.
+
+95
+00:04:59,820 --> 00:05:03,510
+And again that is an error I'm making here on purpose,
+
+96
+00:05:03,510 --> 00:05:06,110
+just to show you how strict mode can help us
+
+97
+00:05:06,110 --> 00:05:07,950
+avoid a certain kind of error,
+
+98
+00:05:07,950 --> 00:05:10,500
+because doing this is actually more common
+
+99
+00:05:10,500 --> 00:05:13,050
+than you might think, okay?
+
+100
+00:05:13,050 --> 00:05:15,810
+And now lets lock something to the console
+
+101
+00:05:15,810 --> 00:05:18,710
+if the person has the drivers license.
+
+102
+00:05:18,710 --> 00:05:20,570
+And so now were actually gonna go back
+
+103
+00:05:20,570 --> 00:05:22,570
+to writing it correctly.
+
+104
+00:05:22,570 --> 00:05:26,790
+So if hasDriversLicense and so you see that now
+
+105
+00:05:28,970 --> 00:05:31,230
+this one is exactly the same,
+
+106
+00:05:31,230 --> 00:05:33,013
+as VS code highlights both.
+
+107
+00:05:34,530 --> 00:05:39,530
+So if hasDriversLicense then log to the console,
+
+108
+00:05:41,360 --> 00:05:44,680
+I can drive.
+
+109
+00:05:44,680 --> 00:05:46,360
+And now lets actually start
+
+110
+00:05:46,360 --> 00:05:48,860
+by deactivating strict mode again,
+
+111
+00:05:48,860 --> 00:05:52,573
+just so we see how this bug could affect our code.
+
+112
+00:05:53,590 --> 00:05:56,610
+So I'm giving it a save and then lets go
+
+113
+00:05:58,510 --> 00:06:01,713
+and open this index.hdml file.
+
+114
+00:06:04,140 --> 00:06:05,770
+Okay?
+
+115
+00:06:05,770 --> 00:06:09,030
+Now lets open up to console here
+
+116
+00:06:09,030 --> 00:06:11,130
+and again I'm gonna increase the text
+
+117
+00:06:11,130 --> 00:06:15,393
+by hitting command plus a couple of times here.
+
+118
+00:06:16,350 --> 00:06:17,530
+Okay?
+
+119
+00:06:17,530 --> 00:06:19,470
+So lets reload here just to make sure
+
+120
+00:06:19,470 --> 00:06:21,920
+that everything is working
+
+121
+00:06:21,920 --> 00:06:26,090
+and now what we see is that it didn't log I can drive
+
+122
+00:06:26,090 --> 00:06:27,340
+to the console.
+
+123
+00:06:27,340 --> 00:06:29,310
+Even though we had attempted to set
+
+124
+00:06:29,310 --> 00:06:32,160
+hasDriversLicense to true here,
+
+125
+00:06:32,160 --> 00:06:35,530
+so we expected that drivers license being true
+
+126
+00:06:35,530 --> 00:06:38,260
+should then log I can drive.
+
+127
+00:06:38,260 --> 00:06:40,930
+But it didn't work and that's because of the mistake
+
+128
+00:06:40,930 --> 00:06:43,101
+that I just introduced here on purpose
+
+129
+00:06:43,101 --> 00:06:45,270
+forgetting this 's'
+
+130
+00:06:45,270 --> 00:06:48,910
+so without the error it should work, right?
+
+131
+00:06:48,910 --> 00:06:51,313
+But without it, its not gonna work.
+
+132
+00:06:52,540 --> 00:06:54,560
+And again because basically here
+
+133
+00:06:54,560 --> 00:06:56,840
+I set a new variable to true
+
+134
+00:06:56,840 --> 00:06:58,460
+and not the original one,
+
+135
+00:06:58,460 --> 00:07:00,260
+so this one is still false
+
+136
+00:07:00,260 --> 00:07:03,660
+and that's why here, this logging does not happen.
+
+137
+00:07:03,660 --> 00:07:05,640
+So now our program has a bug
+
+138
+00:07:05,640 --> 00:07:07,660
+which means that it has a mistake
+
+139
+00:07:07,660 --> 00:07:11,010
+and we would now go ahead and find that bug.
+
+140
+00:07:11,010 --> 00:07:14,050
+But, strict mode can actually help us with this.
+
+141
+00:07:14,050 --> 00:07:15,573
+So lets turn it back on,
+
+142
+00:07:17,020 --> 00:07:19,780
+give it a save, now try it again.
+
+143
+00:07:19,780 --> 00:07:22,230
+And now we actually get an error.
+
+144
+00:07:22,230 --> 00:07:26,760
+So here we see that hasDriversLicense is not defined,
+
+145
+00:07:26,760 --> 00:07:30,200
+so in line number 6 which is right here
+
+146
+00:07:30,200 --> 00:07:32,440
+and so this error message now tells us
+
+147
+00:07:32,440 --> 00:07:34,330
+exactly what is wrong.
+
+148
+00:07:34,330 --> 00:07:37,200
+So it tells us that this variable is not defined
+
+149
+00:07:37,200 --> 00:07:40,410
+and then we can see, oh we did a mistake here,
+
+150
+00:07:40,410 --> 00:07:41,827
+we're missing the 's',
+
+151
+00:07:42,700 --> 00:07:45,100
+right, so now its the same variable,
+
+152
+00:07:45,100 --> 00:07:48,470
+here, here and here, okay?
+
+153
+00:07:48,470 --> 00:07:51,760
+And so if we try that now again.
+
+154
+00:07:51,760 --> 00:07:53,490
+then the error is gone.
+
+155
+00:07:53,490 --> 00:07:57,660
+And so strict mode really helped us avoid this kind of bug
+
+156
+00:07:57,660 --> 00:07:59,330
+that we created here.
+
+157
+00:07:59,330 --> 00:08:01,340
+You can experiment a little bit with this
+
+158
+00:08:01,340 --> 00:08:03,640
+to make it really clear.
+
+159
+00:08:03,640 --> 00:08:06,330
+Now another thing that strict mode does
+
+160
+00:08:06,330 --> 00:08:09,600
+is to introduce a short list of variable names
+
+161
+00:08:09,600 --> 00:08:11,700
+that are reserved for features
+
+162
+00:08:11,700 --> 00:08:14,453
+that might be added to the language a bit later.
+
+163
+00:08:16,590 --> 00:08:20,573
+For example, lets try to define a variable called interface,
+
+164
+00:08:25,630 --> 00:08:27,720
+for example, for an audio interface
+
+165
+00:08:27,720 --> 00:08:29,023
+and now if we try this.
+
+166
+00:08:30,110 --> 00:08:33,630
+Then we see that, we get an unexpected strict mode
+
+167
+00:08:33,630 --> 00:08:37,210
+reserved word, error message basically
+
+168
+00:08:37,210 --> 00:08:39,700
+and that is again because JavaScript
+
+169
+00:08:39,700 --> 00:08:42,810
+is reserving this word here for a feature
+
+170
+00:08:42,810 --> 00:08:45,470
+that it might implement in the future.
+
+171
+00:08:45,470 --> 00:08:47,940
+And so by reserving these kind of words
+
+172
+00:08:47,940 --> 00:08:49,640
+it will then make it easier
+
+173
+00:08:49,640 --> 00:08:53,530
+to implement the feature in the future.
+
+174
+00:08:53,530 --> 00:08:57,140
+So another one is private for example,
+
+175
+00:08:57,140 --> 00:09:02,117
+so const private, just some number here
+
+176
+00:09:03,360 --> 00:09:05,363
+and so this one will also not work.
+
+177
+00:09:06,370 --> 00:09:07,881
+And that's because in the future
+
+178
+00:09:07,881 --> 00:09:12,640
+there might be something called a private field and classes
+
+179
+00:09:12,640 --> 00:09:15,030
+or in some other places even in the language
+
+180
+00:09:15,030 --> 00:09:18,290
+and they might want to use this word for that.
+
+181
+00:09:18,290 --> 00:09:20,940
+And so strict mode reserves these words
+
+182
+00:09:20,940 --> 00:09:23,746
+so we cannot use them for variables.
+
+183
+00:09:23,746 --> 00:09:27,630
+It's the same logic as this one
+
+184
+00:09:27,630 --> 00:09:29,840
+so we cannot call a variable 'if'.
+
+185
+00:09:32,030 --> 00:09:32,863
+Right?
+
+186
+00:09:32,863 --> 00:09:35,503
+And that's because there's already an if statement.
+
+187
+00:09:37,170 --> 00:09:39,710
+So here we get an unexpected token 'if'
+
+188
+00:09:39,710 --> 00:09:40,980
+so that's like the rules
+
+189
+00:09:40,980 --> 00:09:42,370
+that I explained to you in the beginning
+
+190
+00:09:42,370 --> 00:09:43,853
+about naming variables.
+
+191
+00:09:45,360 --> 00:09:47,480
+Okay? Alright.
+
+192
+00:09:47,480 --> 00:09:50,300
+Now there are actually a lot of other changes
+
+193
+00:09:50,300 --> 00:09:53,740
+that affect things that we haven't learned about yet.
+
+194
+00:09:53,740 --> 00:09:57,460
+So, that's stuff like functions, objects,
+
+195
+00:09:57,460 --> 00:10:01,360
+setting properties on primitive values and many more.
+
+196
+00:10:01,360 --> 00:10:03,760
+And I will mention them in future lectures
+
+197
+00:10:03,760 --> 00:10:05,380
+when the time comes.
+
+198
+00:10:05,380 --> 00:10:07,080
+But everything that I'm gonna say
+
+199
+00:10:07,080 --> 00:10:09,400
+in the rest of the course from now on
+
+200
+00:10:09,400 --> 00:10:13,260
+we'll always assume that you have strict mode turned on.
+
+201
+00:10:13,260 --> 00:10:16,000
+And so I will add this line of code here
+
+202
+00:10:16,000 --> 00:10:17,910
+to all the scripts in the future
+
+203
+00:10:17,910 --> 00:10:19,965
+and so you should do the same.
+
+204
+00:10:19,965 --> 00:10:22,500
+Anyway with this out of the way
+
+205
+00:10:22,500 --> 00:10:24,623
+lets now start learning functions.
+
