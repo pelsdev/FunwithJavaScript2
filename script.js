@@ -3,8 +3,8 @@
 const calcAverage = (a, b, c) => (a + b + c)/3;
 console.log(calcAverage(2,2,2));
 
-const scoreDolphins = calcAverage(44, 23, 71);
-const scoreKoalas = calcAverage(65, 54, 49);
+let scoreDolphins = calcAverage(44, 23, 71);
+let scoreKoalas = calcAverage(65, 54, 49);
 
 console.log(scoreDolphins, scoreKoalas);
 
@@ -18,3 +18,4 @@ const checkWinner = function(avgDolpins, avgKoalas){
     }
 }
 checkWinner(scoreDolphins, scoreKoalas);
+checkWinner(500, 135);
